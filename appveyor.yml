@@ -36,7 +36,6 @@ build_script:
   # - rm tmp
   
   - ./configure  'CC=clang' 'CXX=clang++' 'OBJC=clang' 'CFLAGS=-Wall -g -O2' 'CPPFLAGS=-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include' 'CXXFLAGS=-Wall -g -O2' 'OBJCFLAGS=-Wall -g -O2' 'FCFLAGS=-Wall -g -O2' 'F77FLAGS=-Wall -g -O2' '--enable-memory-profiling' '--x-libraries=/opt/X11/lib' '--enable-R-framework' 'PKG_CONFIG_PATH=/usr/lib/pkgconfig:/opt/X11/lib/pkgconfig:/usr/local/lib/pkgconfig' || true
-  - make
 
 artifacts:
   - name: Logs
